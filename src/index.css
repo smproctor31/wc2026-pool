@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  background: #f0f4f8;
+  color: #1a1f36;
+  font-family: 'Barlow', 'Trebuchet MS', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+input, select, button, textarea { font-family: inherit; }
+input:focus, select:focus { outline: 2px solid #1a4db5; outline-offset: 1px; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #e8edf5; }
+::-webkit-scrollbar-thumb { background: #b0bed4; border-radius: 3px; }
+.btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.btn-secondary:hover { background: #dce5f0 !important; }
+.team-card-available:hover {
+  border-color: #1a4db5 !important;
+  background: #deeaff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26,77,181,0.15);
+}
+.team-card-available { transition: all 0.15s ease; }
